@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\glfw-3.4\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\glfw-3.4\build\src\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\wallyson\lib\glfw-3.4\glfw-3.4\include\GLFW;C:\Users\wallyson\lib\glad\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\glfw-3.4\build\src\Debug;C:\Users\wallyson\lib\glfw-3.4\glfw-3.4\build\src\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -113,6 +113,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerbose</ShowProgress>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -132,13 +133,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Downloads\glad\src\glad.c" />
+    <ClCompile Include="..\..\..\lib\glad\src\glad.c" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
     <None Include="Shaders\frag.glsl" />
     <None Include="Shaders\vert.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

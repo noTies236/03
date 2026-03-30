@@ -2,3 +2,7 @@
 x64/
 Debug/
 *.user
+
+# Arquivos de configuração do Visual Studio
+*.vcxproj
+*.vcxproj.filters

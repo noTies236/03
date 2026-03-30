@@ -18,7 +18,7 @@
     <ClCompile Include="Main.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Downloads\glad\src\glad.c">
+    <ClCompile Include="..\..\..\lib\glad\src\glad.c">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,5 +26,10 @@
     <None Include=".gitignore" />
     <None Include="Shaders\vert.glsl" />
     <None Include="Shaders\frag.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stb_image.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
